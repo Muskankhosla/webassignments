@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(112, 91, 63) ;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  h1{
+    color:black;
+    font-size: 2rem ;
+  
+  }
+  
+  nav{
+    width: 100vw;
+    height: 100px;
+  }
+  
+  ul{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+  }
+  
+  li{
+    list-style-type: none;
+    color: rgb(19, 28, 36);
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+  
+  /* li:hover{
+    background-color: rgba(1,0,0,0.5);
+  } */
+  
+  a{
+    text-decoration: none;
+  }
+  
+  .brand:hover{
+    color: #46411a;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width:650px){
+    
+    ul{
+      flex-direction: column;
+      align-items: center;
+    }
+    nav{
+      height: 450px;
+    }
+  }
+  
+  
+  
+  #slideshow{
+    width: 55pc;
+    height: 600px;
+    margin: 30px auto;
+    overflow: hidden;
+  }
+  
+  .slide{
+    float:left;
+  }
+  
+  .slide img{
+  
+    height: 600px;
+    width: 60vw;
+  }
+  
+  .wrapper{
+    /* border: 5px solid black; */
+    width: calc(70vw*6);
+    animation:  15s ease infinite slider;
+  }
+  
+  @keyframes slider {
+
+  
+    16% {
+      margin-left: 0px;
+    }
+    
+    32% {
+      margin-left: calc(-60vw * 1);
+    }
+    
+    48% {
+      margin-left: calc(-60vw * 2);
+    }
+    
+    64% {
+      margin-left: calc(-60vw* 3);
+    }
+  
+    80%{
+      margin-left:calc(-60vw*4);
+    }
+  
+    96%{
+      margin-left:calc(-60vw*5);
+    }
+  }
+  
+                  /* SLIDESHOW ENDS HERE  */
+  
+  
+  #items{
+    width: 60vw;
+    height: 600px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  figure{
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid white;
+    color: #ccc;
+    box-shadow: 2px 2px 3px rgb(247, 204, 148);
+    transition: .2s ease-in;
+  }
+  
+  figure:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  figure img{
+    width: 20vw;
+  }
+  
+  figure button{
+    font-size: 1.5rem;
+    width: 90px;
+    height: 40px;
+    border-radius: 2px;
+    transition: 1s ease;
+  }
+  
+  figure button:hover{
+    background-color: #8d8585;
+    cursor: pointer;
+  }
+  
+                  /* ITEMS END HERE  */
+  
+  footer{
+    height: 900px;
+  }
