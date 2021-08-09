@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.banner{
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  font-size: x-large;
+}
+.cov{ width: auto;
+    padding: 12px;
+    height:auto;
+    background-color: rgb(209, 170, 221);
+    border-radius: 0px 15px 0px 15px ;
+}
+.callnow{
+    padding: 10px;
+    height:auto;
+    background-color: rgb(209, 170, 221);
+    border-radius: 14px 0px 14px  ;
+}
+.details ul{
+    margin-top: 5px;
+     display: flex;
+     flex-direction: row;
+     justify-content: right;
+    list-style: none; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.details li{
+    
+    color: #000;
+}
+.details a{
+ 
+    padding: 15px 25px;
+    color: #000;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all .2s ease-in-out ;
+ 
+}
+.details a:hover{
+     font-size: 17px;
+    cursor: pointer;
+}
+.name{
+    margin-left: 40px;
+    padding: 10px;
+    display: inline;
+    background-color: rgb(209, 170, 221);
+    border-radius: 3px;
+}
+.nav{
+     height: 60px;
+    background-color: rgb(240, 232, 232);
+   
+
+}
+.nav ul{
+   
+     display: flex;
+     flex-direction: row;
+     justify-content: right;
+     list-style: none; 
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav li{
+    padding: 15px 45px;
+    color: #000;
+}
+.nav a{
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all .2s ease-in-out ;
+ 
+}
+.nav a:hover{
+    font-size: 25px;
+    font-weight: bold;
+    color: grey;
+   cursor: pointer;
+}
+.menu{ text-align: end;
+    border-bottom: solid plum ;
+}
+.btn{
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+   background-color: white;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dropdown{
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    min-width : 130px;
+    box-shadow: 0px 8px 16px 0px rgb(80, 78, 78);
+    z-index: 1;
+  }
+  .dropdown-content a { 
+    background-color: rgb(247, 228, 247);
+    color: rgb(24, 20, 24);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: solid 1px;
+  }
+  
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .btn {
+    font-weight: bold;
+  }
+  #slideshow{ 
+    width: 57pc;
+    height: 320px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 35px;
+    
+  }
+  
+  .slide{
+
+    float:left;
+  }
+  
+  .slide img{
+   height:320px;
+   width:918px;
+  }
+  
+  .wrapper{
+    width: calc(70vw*6);
+    animation:  15s ease infinite slider;
+  }
+  
+  @keyframes slider {
+
+  
+    16% {
+      margin-left: 0px;
+    }
+    
+    32% {
+      margin-left: calc(-60vw * 1);
+    }
+    
+    48% {
+      margin-left: calc(-60vw * 2);
+    }
+    
+  }
+  #items {
+    background-color:rgb(240, 232, 232);
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    transition: 0.3s;
+  }
+ 
+ #items figure{margin: 20px;
+   padding-left: 40px;
+   width:330px;
+   height: 330px;
+ }
+  #items figure img {
+    height: 300px;
+    width: 300px;
+    padding: 10px 16px;
+      border-radius: 5px 5px 0 0;
+    }
+ .vid{
+   padding: 50px;
+   padding-left: 27%;
+ }
+ .mood{
+   background-color: rgb(240, 232, 232);
+   text-align: center;
+ }
+ .flexcards{ 
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 2px;;
+  border-radius: 6px;
+  height:270px;
+  transition: 0.3s;
+}
+
+.cards:hover {
+box-shadow: 1px 10px 16px 0 rgba(0,0,0,0.3);
+  transform: scale(0.9);
+
+}
+.cod{
+  align-items: center; 
+  
+  padding: 2px 3px;
+  width: inherit;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 370px;
+}
+.cards{
+  transition: transform .2s; 
+  padding: 20px;
+   width: 214px;
+  height: 214px;
+  text-align: center;
+  color: #666666;
+ 
+}
+.cards img{
+  padding-top: 30px;
+}
+
+.cards h1{
+  text-align: center;
+}
+.cate {
+  height: 150px;
+  background-color:rgb(240, 232, 232);
+text-align: center;
+}
+.btn1{ width: 300px;
+  margin-right: 60px;
+  padding: 10px;
+  font-size: 25px;
+  border-style: none ;
+  border-radius: 20px;
+  cursor: pointer;
+ background-color: plum;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn1 img{
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.image-container {
+  margin: 30px;
+  display: block;
+  background-image: url("WhatsApp Image 2021-08-08 at 21.24.43.jpeg") ;
+  background-repeat: no-repeat;
+background-size: contain;
+  position: relative; 
+  height: 300px;
+  width: 420px;
+  text-align: center;
+
+}
+
+.text {color:rgb(62, 20, 62); 
+  font-family:  cursive;
+  font-size: 40px;
+  font-weight: bolder;
+  position: absolute; /* Position text */
+  top: 60%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%);
+}
+.b{ 
+  display: flex;
+  flex-wrap: wrap;
+ padding-left: 100px;
+  
+}
+.btn2{ text-align: center;
+  margin: 60px;
+  padding: 20px;
+  font-size: 15px;
+  border-style: none ;
+  border-radius: 20px;
+  cursor: pointer;
+ background-color: plum;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn2 img{
+  object-fit: contain;
+  border-radius: 10px;
+}
+btn2
