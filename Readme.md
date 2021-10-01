@@ -8,9 +8,9 @@
 
 
 ### HTML CSS AND JAVASCRIPT ASSIGNMENTS :dart:
-| Assignment No. | DIRECTORY LINKS | DEPLOYED LINK |
+| Assignment No. | NAME | TOPIC |
 | :---:   | :-: | :-: |
-| 1 |     |  |
+| 1 | TABLE AND FORM    | HTML  |
 | 2 |     |  |
 | 3 |     |  |
 
