@@ -10,9 +10,9 @@
 ### HTML CSS AND JAVASCRIPT ASSIGNMENTS :dart:
 | Assignment No. | NAME | TOPIC |
 | :---:   | :-: | :-: |
-| 1 | TABLE AND FORM    | HTML  |
-| 2 |     |  |
-| 3 |     |  |
+| 1 | TABLE AND FORM  | HTML     |
+| 2 |   PHONE BOOK    | HTML CSS |
+| 3 |  HOVER BUTTON   | HTML CSS |
 
 <hr/>
 
