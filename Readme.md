@@ -13,6 +13,7 @@
 | 1 | TABLE AND FORM  | HTML     |
 | 2 |   PHONE BOOK    | HTML CSS |
 | 3 |  HOVER BUTTON   | HTML CSS |
-
+| 4 |  SLIDER         | CSS      |
+| 5 | PORTFOLIO       | CSS      |
 <hr/>
 
