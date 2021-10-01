@@ -15,5 +15,8 @@
 | 3 |  HOVER BUTTON   | HTML CSS |
 | 4 |  SLIDER         | CSS      |
 | 5 | PORTFOLIO       | CSS      |
+| 6 | TODO LIST       |JAVASCRIPT|
+| 7 | WEATHER APP     |JAVASCRIPT|
+
 <hr/>
 
