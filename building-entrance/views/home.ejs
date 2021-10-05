@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+    <a href="/home/enter"><button id="enter">Enter The Building</button></a>
+    <section>
+        <h2 style="text-align: center;">Register</h2>
+        <table>
+        <%for(let d of data){%>
+                <tr id="firstrow">
+                    <td><strong>ID</strong></td><td><%=d.id%></td>
+                    </tr>
+                <tr>
+                <td><strong>Name</strong></td><td><%=d.name%></td>
+                </tr>
+                <tr>
+                    <td><strong>Email:</strong></td><td><%=d.email%></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Phone</strong></td><td><%=d.phone%></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Check In Time:</strong></td><td><%if(d.cinh<=9){%><%=0%><%}%><%=d.cinh%>:<%if(d.cinm<=9){%><%=0%><%}%><%=d.cinm%></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Status:</strong></td><td><%=d.status%></td>
+                <%if(d.status==="Present"){%>
+                  <tr id="lastrow">  
+                <td><a href="/home/<%=d.id%>""><button id="exit">Exit the building</button></a></td>
+                <%}else{%>
+                <tr>
+                    <td><strong>Check Out Time:</strong></td><td><%if(d.couth<=9){%><%=0%><%}%><%=d.couth%>:<%if(d.coutm<=9){%><%=0%><%}%><%=d.coutm%></td>
+                </tr><tr id="lastrow"><td></td>
+                    <%}%>
+                <form action="home/<%=d.id%>?_method=DELETE" method="POST">
+                 <td><button id="delete" type="submit">Delete Entry</button></td>
+                 </tr>
+            </form>
+            <%}%>
+        </table>
+</section>
+</body>
+</html>

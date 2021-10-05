@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+    <section>
+        <form action="/home" method="POST">
+            <fieldset>
+                <legend for="name">Enter Name</legend>
+                <input type="text" name="name" id="id" required>
+                <legend for="email">Enter Email</legend>
+                <input type="email" name="email" id="email" required>
+                <legend  for="phone">Enter Phone Numbber</legend>
+                <input type="text" name="phone" id="phone">
+                <legend for="hrs">Enter time(IN 24 HRS FORMAT)</legend>
+                <input type="number" name="cinh" id="cinh" min="0" max="23" required>
+                <input type="number" name="cinm" id="cinm" min="0" max="59" required>
+                <button type="submit" id="submit">Submit</button>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
